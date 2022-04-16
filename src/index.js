@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDom from 'react-dom'
+import './index.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function App() {
+	
+	const [number, setNumber] = React.useState(0)
+	
+	
+	function minus() {
+		let newNum = number - 1
+		setNumber(newNum);
+	}
+	
+	function plus() {
+		let newNum = number + 1
+		setNumber(newNum);
+	}
+	
+	
+	return(
+		<div className="content">
+		<h1 style={{"textAlign": "center" }}>Counter</h1>
+			<div className="number big--circle">
+				<span>{number}</span>
+				<div className="minus--button small--circle" onClick={minus}>-</div>
+				<div className="plus--button small--circle" onClick={plus}>+</div>
+			</div>
+		</div>
+	)
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDom.render(<App />, document.querySelector('#root'));
