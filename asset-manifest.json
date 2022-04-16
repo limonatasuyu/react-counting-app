@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-counting-app/static/css/main.dee1b04e.css",
+    "main.js": "/react-counting-app/static/js/main.1ad454f9.js",
+    "index.html": "/react-counting-app/index.html",
+    "main.dee1b04e.css.map": "/react-counting-app/static/css/main.dee1b04e.css.map",
+    "main.1ad454f9.js.map": "/react-counting-app/static/js/main.1ad454f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dee1b04e.css",
+    "static/js/main.1ad454f9.js"
+  ]
+}
