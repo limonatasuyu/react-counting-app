@@ -1,3 +1,6 @@
+React app for counting numbers.
+You can see the app from here: https://limonatasuyu.github.io/react-counting-app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
